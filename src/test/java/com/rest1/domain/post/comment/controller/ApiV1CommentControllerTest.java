@@ -63,7 +63,7 @@ public class ApiV1CommentControllerTest {
                 .andExpect(jsonPath("$[0].modifyDate").exists())
                 .andExpect(jsonPath("$[0].content").value("댓글 1-3"))
                 .andExpect(jsonPath("$[0].authorId").value(3))
-                .andExpect(jsonPath("$[0].authorName").value("사용자1"))
+                .andExpect(jsonPath("$[0].authorName").value("유저1"))
                 .andExpect(jsonPath("$[0].postId").value(1));
 
     }
@@ -90,7 +90,7 @@ public class ApiV1CommentControllerTest {
                 .andExpect(jsonPath("$.modifyDate").exists())
                 .andExpect(jsonPath("$.content").value("댓글 1-1"))
                 .andExpect(jsonPath("$.authorId").value(3))
-                .andExpect(jsonPath("$.authorName").value("사용자1"))
+                .andExpect(jsonPath("$.authorName").value("유저1"))
                 .andExpect(jsonPath("$.postId").value(1));
     }
 
